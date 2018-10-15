@@ -16,6 +16,9 @@ public class BankCustomer {
 
     private String id, firstName, lastName;
     private double balance;
+    private  BankCustomer(){
+    
+    }
 
     public BankCustomer(String id, String firstName, String lastName, double balance) {
         this.id = id;
