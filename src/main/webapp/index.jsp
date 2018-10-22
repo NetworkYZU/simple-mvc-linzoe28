@@ -8,7 +8,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form method="POST" action="balance">
+        <form method="POST" action="score">
             <input type="text"  name="id"/><input type="submit">
         </form>
     </body>

@@ -3,7 +3,7 @@
     Created on : Sep 24, 2018, 7:35:46 AM
     Author     : lendle
 --%>
-
+<%@page import="lendle.courses.network.simplemvc.Student"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,6 +12,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <jsp:useBean id="student" type="lendle.courses.network.simplemvc.Student" scope="request"/>
+        <h1> Hi,<jsp:getProperty name="student" property="name"/> </h1>
+        繼續努力
     </body>
 </html>
