@@ -33,9 +33,9 @@ public class ShowScore extends HttpServlet {
         String id = request.getParameter("id");
         Student student = Student.getStudent(id);
         String address = null;
-        if (student == null) {
+       /* if (student == null) {
             address = "/WEB-INF/score-report/UnknownStudent.jsp";
-        } else if (student.getScore() ==100 ) {
+        } else*/ if (student.getScore() ==100 ) {
             address = "/WEB-INF/score-report/HighScore.jsp";
             request.setAttribute("student", student);
         } else if (student.getScore() <60 ) {

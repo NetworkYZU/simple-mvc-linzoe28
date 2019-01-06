@@ -62,4 +62,7 @@ public class Student {
     public static Student getStudent(String id) {
         return db.get(id);
     }
+    public static Map<String, Student> getStudents(){
+        return db;
+    }
 }
