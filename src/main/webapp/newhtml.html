@@ -53,7 +53,7 @@ and open the template in the editor.
                                         {
                                             text: "OK",
                                             click: function () {
-                                                $.ajax("allscore?id="+ dlgmodel.id+",name="+ dlgmodel.name+",score="+ dlgmodel.score, {
+                                                $.ajax("allscore?id="+ dlgmodel.id+"&name="+ dlgmodel.name+"&score="+ dlgmodel.score, {
                                                     type: "PUT",
                                                     success:function(o){
                                                         d.id= dlgmodel.id;

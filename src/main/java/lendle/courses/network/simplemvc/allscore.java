@@ -59,10 +59,10 @@ public class allscore extends HttpServlet {
         System.out.println("student" + student);
         List list = new Vector();
         PrintWriter out = response.getWriter();
-        for (int i = 1; i < student.size() + 1; i++) {
-            String id = student.get("id" + i).getId();
-            String name = student.get("id" + i).getName();
-            Double score = student.get("id" + i).getScore();
+        for (Student s: student.values()) {
+            String id = s.getId();
+            String name = s.getName();
+            Double score = s.getScore();
             Map map = new HashMap();
             map.put("id", id);
             map.put("name", name);
